@@ -1,0 +1,11 @@
+*Zone.Identifier
+
+.agents/skills/CoSpec/memory/log/*
+!.agents/skills/CoSpec/memory/log/.gitkeep
+
+.agents/skills/CoSpec/memory/specification/current.md
+.agents/skills/CoSpec/memory/specification/archive/*
+!.agents/skills/CoSpec/memory/specification/archive/.gitkeep
+
+.agents/skills/CoSpec/shelf/*
+!.agents/skills/CoSpec/shelf/index.md
