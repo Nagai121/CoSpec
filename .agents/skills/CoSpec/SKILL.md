@@ -29,6 +29,7 @@ CoSpecはプロジェクト専用Skillとして配置し、実行時データを
 | `check` | `discussion.md`のCheck |
 | `assumption` | `discussion.md`のAssumption |
 | `summary` | `discussion.md`のSummary |
+| `br` | `discussion.md`のBrute Reasoning。追加で`brute_reasoning.md` |
 | `search` | `discussion.md`のSearch。必要時だけ`search.md` |
 | `shelf` | `shelf.md` |
 | `mem`, `memo` | `memo.md` |
@@ -43,8 +44,9 @@ CoSpecはプロジェクト専用Skillとして配置し、実行時データを
 ## Routing
 
 - 通常の議論、Check、Assumption、Summary、Search: 必要なときだけ`discussion.md`を読む。
+- Brute Reasoning: `br`が明示された場合だけ`discussion.md`と`brute_reasoning.md`を読み、存在するcurrent Specificationと必要範囲のMemoryを基準情報として参照する。
 - Searchで外部調査が必要: 追加で`search.md`を読む。
-- Git操作を含む場合: `Git.md`を読む。ExeでGit操作を行う場合は`exe.md`と`Git.md`の両方を読む。
+- Git操作を含む場合: `Git.md`を読む。ExeでGit操作または既存ファイルの消去を行う場合は`exe.md`と`Git.md`の両方を読む。
 - Shelf: `shelf`が明示された場合だけ`shelf.md`を読む。通常のDiscussionではshelfを参照しない。
 - Logへの保存: 保存時だけ`memo.md`を読む。具体的管理が必要なら`memory_schema.md`も読む。
 - Specificationの更新: `update.md`と`memory_schema.md`を読み、対象currentを読む。
